@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 
-Route::get('/', [BillboardsController::class, 'index'])->name('home');
+Route::get('/', [BillboardsController::class, 'index'])->name('index');
 Route::get('/{billboard}', [BillboardsController::class, 'detail'])->name('billboard.detail');
 Auth::routes();
 

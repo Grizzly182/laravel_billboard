@@ -7,5 +7,5 @@
         <p>{{ $billboard->content }}</p>
         <p>{{ $billboard->price }} руб.</p>
         <p><b>Автор:</b> {{ $billboard->user->name }}</p>
-        <a href="{{route('home')}}" class="btn btn-primary">Назад</a>
+        <a href="{{route('index')}}" class="btn btn-primary">Назад</a>
 @endsection
