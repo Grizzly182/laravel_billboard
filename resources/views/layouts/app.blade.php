@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/styles/main.css"">
 </head>
 <body>
+    @include('layouts.nav')
     <div class="container">
         <h1 class="my-3 text-center">Объявления</h1>
         @yield('content')
