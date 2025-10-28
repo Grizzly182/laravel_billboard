@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BillboardsController;
+use Illuminate\Support\Facades\Auth;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,3 +16,6 @@ use App\Http\Controllers\BillboardsController;
 
 Route::get('/', [BillboardsController::class, 'index'])->name('home');
 Route::get('/{billboard}', [BillboardsController::class, 'detail'])->name('billboard.detail');
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
