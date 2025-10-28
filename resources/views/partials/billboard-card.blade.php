@@ -1,4 +1,4 @@
-    <div class="card" style="width: 18rem;">
+    <div class="card p-1 m-1 shadow-sm" style="width: 18rem;">
         <div class="card-body">
             <h5 class="card-title">{{ $billboard->title }}</h5>
             <p class="card-text">{{ $billboard->content }}</p>

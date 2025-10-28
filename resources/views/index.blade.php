@@ -3,9 +3,9 @@
 @section('title', 'Объявления')
 
 @section('content')
-        @if (count($billboards) > 0)
-                @foreach($billboards as $billboard)
-                @include('billboard-card', ['billboard' => $billboard])
-                @endforeach
-        @endif
+    <div class="row">
+        @foreach ($billboards as $billboard)
+            @include('partials.billboard-card', ['billboard' => $billboard])
+        @endforeach
+    </div>
 @endsection

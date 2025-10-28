@@ -1,4 +1,17 @@
-h1 {
-    background: url("/images/logo.png") left / auto 100% no-repeat,
-                url("/images/logo.png") right / auto 100% no-repeat;
+.btn{
+    background: linear-gradient(to right, #190974, #2b0033);
+    border: none;
+    outline: none;
+}
+
+.btn-danger {
+    background: linear-gradient(to right, #970101, #ff0000);
+}
+
+nav {
+    background: linear-gradient(to right, #8a1313, #2b0033);
+}
+
+nav a {
+    margin: 0px 10px;
 }

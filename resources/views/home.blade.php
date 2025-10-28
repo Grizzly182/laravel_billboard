@@ -1,23 +1,11 @@
 @extends('layouts.app')
+@section('title', 'Мои объявления')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
-
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    {{ __('You are logged in!') }}
-                </div>
-            </div>
-        </div>
+    <p class="text-end"><a href="{{ route('billboard.create') }}">Добавить объявление</a></p>
+    <div class="row p-2">
+        @foreach ($billboards as $billboard)
+            @include('partials.billboard-edit-card', ['billboard' => $billboard])
+        @endforeach
     </div>
-</div>
 @endsection
