@@ -46,4 +46,9 @@ class User extends Authenticatable
     {
         return $this->hasMany(Billboard::class);
     }
+
+    public function images() : HasMany
+    {
+        return $this->hasMany(Image::class);
+    }
 }
